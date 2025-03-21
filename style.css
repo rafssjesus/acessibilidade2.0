@@ -1,0 +1,79 @@
+/* estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#linha-do-tempo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#linha-do-tempo li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#linha-do-tempo li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* estilos para acessibilidade */
+body {
+    font-size: 18px; /* tamanho de fonte mínimo recomendado */
+}
+
+#linha-do-tempo li {
+    padding: 20px; /* espaço mínimo recomendado entre elementos */
+}
+
+#linha-do-tempo li::before {
+    background-color: #333; /* contraste mínimo recomendado */
+}
+#aumentar-fonte, #diminuir-fonte {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #aumentar-fonte {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  #diminuir-fonte {
+    background-color: #FF9800;
+    color: #fff;
+  }
+  
